@@ -15,14 +15,51 @@
         margin: 0;
       }
       
-    
-      .uk-light .uk-add-text-white {
-        color: #fff;
+      .uk-light .text-white {
+        color: #fff !important;
       }
 
-      .uk-add-text-spaced {
+      .bg-white {
+        background-color: #fff !important;
+        border: none;
+      }
+
+      .text-spaced {
         letter-spacing: 0.2em;
       }
+
+      .brand-text {
+        color: #862633 !important;
+      }
+
+      .brand-bg {
+        background-color: #862633 !important;
+        border-color: #862633 !important;  
+        border: none;
+      }
+      
+      /* --- HOVER STYLES START HERE --- */
+
+      
+      .uk-button {
+          transition: all 0.2s ease-in-out;
+      }
+
+      /* White Button Hover State */
+      .bg-white.brand-text:hover {
+          background-color: #504345 !important;  
+          color: #fff !important; 
+          transform: scale(1.05); 
+          border: none;
+      }
+
+      /* Brand Color Button Hover State */
+      .brand-bg:hover {
+          background-color: #6a1621 !important;  
+          border-color: #a13d4a !important;
+          transform: scale(1.05); /* "Pop" effect */
+      }
+
     </style>
   </head>
   <body>
@@ -38,29 +75,30 @@
       <div class="uk-container uk-position-relative">
         <div class="uk-grid-large uk-flex-middle@m" uk-grid>
           <div class="uk-width-1-2@m">
-            <!-- The classes are correct, the CSS fix above makes them work -->
-            <p class="uk-text-lead uk-add-text-white uk-text-italic uk-text-capitalized uk-add-text-spaced uk-margin-bottom-small uk-text-lighter"  >Standalone Messages</p>
-            <h1 class="uk-heading-medium uk-add-text-white uk-text-bold uk-margin-small-top">
+            <p class="uk-text-lead text-white uk-text-italic uk-text-capitalized text-spaced uk-margin-bottom-small uk-text-lighter"  >Standalone Messages</p>
+            <h1 class="uk-heading-medium text-white uk-text-bold uk-margin-small-top">
               The Power of the Holy Spirit: In Us and Through Us
             </h1>
-            <p class="uk-text-meta uk-add-text-white uk-text-bold uk-add-text-spaced uk-text-lighter">June 8, 2025</p>
+            <p class="uk-text-meta text-white uk-text-bold text-spaced uk-text-lighter">June 8, 2025</p>
 
             <div class="uk-margin">
               <a
                 href="https://www.youtube.com/playlist?list=PLgE8B1SdCTDuNBKK4cqhXdj_I4Mm1YU4t"
-                class="uk-button uk-button-default"
+                class="uk-button uk-button-default brand-text bg-white uk-border-rounded"
+                target="_blank"
               >
                 View Series
               </a>
               <a
                 href="https://www.youtube.com/watch?v=g_0jNgQaK60"
-                class="uk-button uk-button-secondary uk-margin-left"
+                class="uk-button uk-margin-left brand-bg text-white uk-border-rounded"
+                target="_blank"
               >
                 <span
                   class="uk-margin-small-right"
                   uk-icon="icon: headphones"
                 ></span>
-                Listen
+                Watch
               </a>
             </div>
           </div>
